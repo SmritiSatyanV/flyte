@@ -61,10 +61,10 @@
 
 ## 💥 Introduction
 
-Flyte is a structured programming and distributed processing platform that enables highly concurrent, scalable, and maintainable workflows for `Machine Learning` and `Data Processing`. It is a fabric that connects disparate computation backends using a type-safe data dependency graph. It records all changes to a pipeline, making it possible to rewind time. It also stores
-a history of all executions and provides an intuitive UI, CLI, and REST/gRPC API to interact with the computation.
+Flyte is a structured programming and distributed processing platform that enables highly concurrent, scalable, and maintainable workflows for `Machine Learning` and `Data Processing`. It bridges the gap between disparate computation backends using a type-safe data dependency graph. It records all the changes to a pipeline, allowing rollbacks. It  stores
+a history of all the executions and provides an intuitive UI, CLI, and REST/gRPC API to interact with the computation.
 
-Flyte is more than a workflow engine -- it uses `workflow` as a core concept, and `task` (a single unit of execution) as a top-level concept. Multiple tasks arranged in a data
+Flyte is more than a workflow engine ; -- it uses `workflow` as a core concept, and `task` as a top-level concept. `Task` is a single unit of execution. Multiple `tasks` arranged in a data
 producer-consumer order creates a workflow.
 
 `Workflows` and `Tasks` can be written in any language, with out-of-the-box support for [Python](https://github.com/flyteorg/flytekit), [Java and Scala](https://github.com/spotify/flytekit-java).
